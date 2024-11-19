@@ -1,0 +1,354 @@
+
+@media (min-width: 768px) {
+
+
+    #uvod {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .introduction > h1{
+        line-height: 68px;
+        font-size: 4rem;
+        padding-top: 20px;
+    }
+
+    .benefits, .monitoring, .features, .contact_block {
+        display: flex;
+        flex-direction: row;
+    }
+    .benefits_item {
+        width: 33%;
+    }
+
+    .features_item {
+        width: 33%;
+    }
+
+    .profile {
+        padding-top: 50px;
+    }
+
+    .contact_text {
+        padding-top: 0px;
+        flex: 0 0 66.66%;
+        text-align: left;
+    }
+
+   #contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .monitoring_img {
+        width: 50%;
+        padding: 0 15px;
+    }
+    .monitoring_collapsor {
+        width: 50%;
+        padding: 0 15px;
+    }
+
+    #procedure >h2, .price >h2 {
+        font-size: 3.5rem;
+    }
+        
+}
+
+body {
+
+    font-family: sans-serif;
+    color: #292824;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: left;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+h2 {
+    justify-content: center;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 28px;
+    padding-bottom: 20px;
+
+}
+
+footer {
+    width: 100%;
+    background-color: #292824;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.article {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sticky-scroll{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 10px 0;
+    box-sizing: border-box;
+    box-shadow: 0 8px 6px -6px #ccc;
+}
+
+.body-header {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.icon-logo {
+    background-image: url(/energy_report/static/images/logo-cs.svg);
+    width:  180px;
+    height: 53px;
+}
+
+.icon {
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.text-hide {
+    color: transparent;
+    font: 0;
+
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-li {
+    font-size: 16px;
+    color: #292824;
+    cursor: pointer;
+
+}
+.menu-li > a:hover {
+    color: #e07f00;
+}
+.menu-li > a {
+    color:#292824;
+    text-decoration: none;
+
+}
+
+#uvod {
+    align-items: center;
+}
+
+
+.introduction>p {
+    padding-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+
+button {
+    background-color: #e07f00;
+    color: white;
+    font-weight: 700;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: #e07f00;
+    line-height: 54px;
+    font-family: monospace;
+}
+
+button:hover {
+    background-color: #9b5a05;
+}
+
+.benefits {
+    padding-bottom: 30px;
+}
+
+.benefits_item {
+    display: flex;
+
+}
+.benefits_img {
+    padding: 0 15px;
+}
+
+.benefits_description {
+    padding: 0 15px;
+}
+
+
+.collapsor_item {
+    box-sizing: border-box;
+}
+
+.collapsor_header {
+    border-bottom: 1px solid #dfdfdf;
+    color: #2e343c;
+    padding: 27px 30px;
+    padding-right: 70px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    margin: 0;
+}
+
+.collapsor_header:hover {
+    color: #e07f00;
+}
+
+
+.collapsor_body {
+    padding: 30px;
+    display: none;
+    color: #3c434d;
+    padding-top: 0;
+    font-size: 1.125rem;
+}
+
+.collapsor_button {
+    padding: 30px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.5rem;
+}
+
+.features {
+
+    padding-bottom: 30px;
+}
+
+.features_item {
+    display: flex;
+
+
+}
+.features_img {
+    padding: 0 15px;
+}
+
+.features_description {
+    padding: 0 15px;
+}
+
+#contact {
+    gap: 60px;
+}
+
+.partner {
+    text-align: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666;
+    font-size: .9375rem;
+    font-family: monospace;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 00px;
+
+}
+
+.partner::before,
+.partner::after {
+    content: "";
+    flex: 0 0 2cm; 
+    height: 1.5px; 
+    background-color: #ccc; 
+}
+
+.contact_block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #292824;
+    color: white;
+}
+
+.profile {
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.profile_img {
+    padding-left: auto;
+    padding-right: auto;
+    width: 75%;
+    display: block;
+
+    border-radius: 50%;
+}
+
+.profile_text {
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.contact_text {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 15px 30px 15px;
+    width: 100%;
+    height: 104px;
+}

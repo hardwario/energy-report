@@ -1,0 +1,134 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="sticky-scroll">
+    <header class="body-header">
+        <div>
+            <a href="/" class="icon icon-logo text-hide">{{ section.title }}</a>   
+        </div>
+        
+        <div>
+            <ul class="menu">
+                <li class="menu-li"><a href="#uvod">Úvod</a></li>
+                <li class="menu-li"><a href="#procedure">Jak to funguje</a></li>
+                <li class="menu-li"><a href="#price">Cena</a></li>
+                <li class="menu-li"><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+</div>
+
+<div class="article">
+<div id="uvod" >
+    <div class="introduction">
+        <h1>Bezdrátový<br> IoT monitoring<br> spotřeby strojů</h1>
+        <p>Neinvazivní, bezpečný a dostupný</p>
+        <div><button>Domluvit schůzku</button></div>
+    </div>
+    <img src="/energy_report/static/images/energy-report-bg.svg" alt="Bezdrátový monitoring">
+</div>
+
+<section>
+    <div>
+        <h2>Výhody Iot monitoringu</h2>
+    </div>
+    <div class="benefits">
+        {% for benefit in config.extra.benefits %}
+        <div class="benefits_item">
+            <img class="benefits_img" src="{{ benefit.image }}" alt="{{ benefit.alt }}">
+            <div class="benefits_description">
+                <h3>{{ benefit.title }}</h3>
+                <p>{{ benefit.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="procedure">
+    <h2>Začněme společně monitorovat<br> spotřebu vašich strojů</h2>
+    <div class="monitoring">
+        <img class="monitoring_img" src="/energy_report/static/images/energy-report-process.jpg" alt="Proces reportu">
+        <div class="monitoring_collapsor">
+            {% for step in config.extra.steps %}
+            <div class="collapsor_item">
+                <h3 class="collapsor_header">{{ step.number }}. {{ step.title }}</h3>
+                <div class="collapsor_body">
+                    <p>{{ step.description }}</p>
+                    {% if step.button %}
+                    <button>{{ step.button }}</button>
+                    {% endif %}
+                </div>
+                
+            </div>
+            {% endfor %}
+            <div class="collapsor_button"><button>Domluvit schůzku</button></div>
+
+        </div>
+    </div>
+</section>
+
+<section id="price">
+    <div class="price">
+        <h2>Cena</h2>
+        <p>{{ config.extra.price }}</p>
+    </div>
+</section>
+
+<section class="features">
+    {% for feature in config.extra.features %}
+    <div class="features_item">
+        <img class="features_img" src="{{ feature.image }}" alt="{{ feature.alt }}">
+        <div class="features_description">
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+<section id="contact">
+    <div>
+        <div class="partner">
+            <span>Partner programu energeticky.report</span>
+        </div>
+        <div>
+            <img src="/energy_report/static/images/microsoft.svg" alt="Microsoft">
+        </div>
+    </div>
+    <div class="contact_block">
+        <div class="profile">
+            <img class="profile_img" src="/energy_report/static/images/rene.jpg" alt="René Gubančok">
+            <p class="profile_text">
+                <strong>René Gubančok</strong><br>
+                <a href="mailto:rene.gubancok@hardwario.com">rene.gubancok@hardwario.com</a><br>
+                Chief Strategy Officer</p>
+        </div>
+        <div class="contact_text">
+            <h3>Nechte mi na vás kontakt, ozvu se</h3>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div>
+            <h2>Vaše nejčastější dotazy</h2>
+        </div>
+        <div class="collapsor">
+            {% for faq in config.extra.faqs %}
+            <div class="collapsor_tem">
+                <h3 class="collapsor_header">{{ faq.question }}</h3>
+                <div class="collapsor_body">
+                    <p>{{ faq.answer }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+</div>
+
+
+{% endblock %}
