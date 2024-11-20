@@ -1,8 +1,87 @@
 
+@media (max-width: 768px) {
+    .contact_text {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    #opening {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .monitoring_img {
+        height: auto; 
+        max-width: 100%; 
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .report_bg {
+        height: auto; 
+        max-width: 100%; 
+        display: block;
+        margin: 0 auto; 
+        margin-top: 40px;
+    }
+
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .menu_toggle {
+        display: none;
+    }
+
+    .menu_togle_label {
+
+        display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .menu_items {
+        display: none;
+        list-style: none;
+        flex-direction: column;
+        margin: 0;
+        padding-right: 1rem;
+        gap: 1rem;
+
+    }
+
+    .menu_item a {
+        display: flex;
+        transition: background 0.3s ease;
+        padding: 0.5rem 1rem;
+        display: block;
+    }
+    
+    .menu_toggle:checked + .menu_toggle_label + .menu_items {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
+
+}
+
 @media (min-width: 768px) {
 
 
-    #uvod {
+    #opening {
 
         display: flex;
         flex-direction: row;
@@ -16,7 +95,7 @@
         padding-top: 20px;
     }
 
-    .benefits, .monitoring, .features, .contact_block {
+    .benefits, .monitoring, .features, #contact_block {
         display: flex;
         flex-direction: row;
     }
@@ -43,9 +122,17 @@
         flex-direction: column;
     }
 
+    .report_bg {
+        width: 50%;
+        padding: 0 15px;
+        object-fit: contain;
+    }
+
     .monitoring_img {
         width: 50%;
         padding: 0 15px;
+        object-fit: contain;
+
     }
     .monitoring_collapsor {
         width: 50%;
@@ -54,6 +141,23 @@
 
     #procedure >h2, .price >h2 {
         font-size: 3.5rem;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_toggle, .menu_toggle_label {
+        display: none;
+    }
+
+    .menu_items {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        list-style: none;
     }
         
 }
@@ -70,9 +174,8 @@ body {
     flex-direction: column;
 }
 
-section {
-    padding-top: 20px;
-    padding-bottom: 40px;
+.section {
+    padding-top: 60px;
 }
 
 h1 {
@@ -119,7 +222,7 @@ a {
     top: 0;
     z-index: 1000;
     background-color: #fff;
-    padding: 10px 0;
+    padding: 25px 0;
     box-sizing: border-box;
     box-shadow: 0 8px 6px -6px #ccc;
 }
@@ -134,17 +237,14 @@ a {
     padding: 0 15px;
 }
 
-.icon-logo {
-    background-image: url(/energy_report/static/images/logo-cs.svg);
-    width:  180px;
-    height: 53px;
-}
 
 .icon {
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    width:  180px;
+    height: 53px;
 }
 
 .text-hide {
@@ -153,38 +253,25 @@ a {
 
 }
 
-.menu {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.menu-li {
-    font-size: 16px;
-    color: #292824;
-    cursor: pointer;
-
-}
-.menu-li > a:hover {
+.menu_item a:hover {
     color: #e07f00;
 }
-.menu-li > a {
+.menu_item a {
     color:#292824;
     text-decoration: none;
+    font-size: 16px;
+    color: #292824;
 
 }
 
-#uvod {
-    align-items: center;
-}
 
 
 .introduction>p {
     padding-bottom: 20px;
     font-size: 1.25rem;
 }
+
 
 
 button {
@@ -212,6 +299,11 @@ button:hover {
 }
 .benefits_img {
     padding: 0 15px;
+    margin-top: 20px;
+    max-width: 70px;
+    max-height: 80px;
+    vertical-align: middle;
+    width: 100%;
 }
 
 .benefits_description {
@@ -219,9 +311,10 @@ button:hover {
 }
 
 
-.collapsor_item {
+details {
     box-sizing: border-box;
 }
+
 
 .collapsor_header {
     border-bottom: 1px solid #dfdfdf;
@@ -233,6 +326,7 @@ button:hover {
     position: relative;
     font-weight: 600;
     margin: 0;
+
 }
 
 .collapsor_header:hover {
@@ -242,7 +336,6 @@ button:hover {
 
 .collapsor_body {
     padding: 30px;
-    display: none;
     color: #3c434d;
     padding-top: 0;
     font-size: 1.125rem;
@@ -251,6 +344,16 @@ button:hover {
 .collapsor_button {
     padding: 30px;
 }
+
+
+.collapsor_item {
+    box-sizing: border-box;
+}
+
+summary {
+    list-style: none;
+}
+
 
 .price {
     display: flex;
@@ -274,6 +377,11 @@ button:hover {
 }
 .features_img {
     padding: 0 15px;
+    margin-top: 20px;
+    max-width: 70px;
+    max-height: 80px;
+    vertical-align: middle;
+    width: 100%;
 }
 
 .features_description {
@@ -309,7 +417,7 @@ button:hover {
     background-color: #ccc; 
 }
 
-.contact_block {
+#contact_block {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #292824;
@@ -317,6 +425,7 @@ button:hover {
 }
 
 .profile {
+    text-align: center;
     padding-left: 50px;
     padding-right: 50px;
 
@@ -325,8 +434,6 @@ button:hover {
     padding-left: auto;
     padding-right: auto;
     width: 75%;
-    display: block;
-
     border-radius: 50%;
 }
 
@@ -337,11 +444,19 @@ button:hover {
 }
 
 .contact_text {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
+
     font-size: 2rem;
     font-weight: 700;
+}
+
+.microsoft {
+    text-align: center;
+}
+
+.microsoft_logo {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 25%;
 }
 
 .footer {

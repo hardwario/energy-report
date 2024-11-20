@@ -19,19 +19,19 @@ price = "Za 95.000 Kč bez DPH získáte úvodní analýzu energetického auditu
 
 
 [[extra.benefits]]
-image = "/energy_report/static/images/effectivity.svg"
+image = "images/effectivity.svg"
 alt = "Efektivnost"
 title = "Mobilní řešení"
 description = "Zcela mobilní řešení, které je kdykoliv snadno přenositelné na další stroje ve vašem podniku."
 
 [[extra.benefits]]
-image = "/energy_report/static/images/consumption.svg"
+image = "images/consumption.svg"
 alt = "Spotřeba"
 title = "Bezpečná komunikace"
 description = "Zařízení komunikují bezdrátově a nezávisle na vaší interní síti."
 
 [[extra.benefits]]
-image = "/energy_report/static/images/document.svg"
+image = "images/document.svg"
 alt = "Dokument"
 title = "Data v Microsoft Power BI"
 description = "Přehledné reporty o spotřebě strojů najdete v aplikaci Microsoft Power BI."
@@ -55,19 +55,19 @@ description = "Data o spotřebě budete mít okamžitě ve svém počítači i t
 
 
 [[extra.features]]
-image = "/energy_report/static/images/efectivity.svg"
+image = "images/effectivity.svg"
 alt = "Efektivita"
 title = "Rychle a bezstarostně"
 description = "Instalaci začneme do 30 dnů a potrvá jen desítky minut. Provoz omezíme minimálně, nebo vůbec."
 
 [[extra.features]]
-image = "/energy_report/static/images/consumption.svg"
+image = "images/consumption.svg"
 alt = "Spotřeba"
 title = "Okamžitá data z provozu"
 description = "Ihned po instalaci uvidíte data z výroby ve vašem telefonu i počítači."
 
 [[extra.features]]
-image = "/energy_report/static/images/document.svg"
+image = "images/document.svg"
 alt = "Dokument"
 title = "Záruka spokojenosti"
 description = "Pokud nebudete spokojeni, můžete nám zařízení do 100 dnů vrátit."
