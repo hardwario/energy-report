@@ -41,10 +41,10 @@
         display: none;
     }
 
-    .menu_togle_label {
+    .menu_toggle_label {
 
         display: block;
-        font-size: 2.5rem;
+        font-size: 2rem;
         cursor: pointer;
         padding: 0.5rem 1rem;
         border-radius: 5px;
@@ -134,7 +134,7 @@
         object-fit: contain;
 
     }
-    .monitoring_collapsor {
+    .monitoring_drop_down {
         width: 50%;
         padding: 0 15px;
     }
@@ -316,7 +316,7 @@ details {
 }
 
 
-.collapsor_header {
+.drop_down_header {
     border-bottom: 1px solid #dfdfdf;
     color: #2e343c;
     padding: 27px 30px;
@@ -329,24 +329,24 @@ details {
 
 }
 
-.collapsor_header:hover {
+.drop_down_header:hover {
     color: #e07f00;
 }
 
 
-.collapsor_body {
+.drop_down_body {
     padding: 30px;
     color: #3c434d;
     padding-top: 0;
     font-size: 1.125rem;
 }
 
-.collapsor_button {
+.drop_down_button {
     padding: 30px;
 }
 
 
-.collapsor_item {
+.drop_down_item {
     box-sizing: border-box;
 }
 

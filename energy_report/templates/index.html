@@ -53,14 +53,14 @@
     <h2>Začněme společně monitorovat<br> spotřebu vašich strojů</h2>
     <div class="monitoring">
         <img class="monitoring_img" src="images/energy-report-process.jpg" alt="Proces reportu">
-        <div class="monitoring_collapsor">
+        <div class="monitoring_drop_down">
             {% for step in config.extra.steps %}
-            <div class="collapsor_item">
+            <div class="drop_down_item">
                 <details>
                     <summary>
-                        <h3 class="collapsor_header">{{ step.number }}. {{ step.title }}</h3>
+                        <h3 class="drop_down_header">{{ step.number }}. {{ step.title }}</h3>
                     </summary>
-                <div class="collapsor_body">
+                <div class="drop_down_body">
                     <p>{{ step.description }}</p>
                     {% if step.button %} 
                     <button>{{ step.button }}</button>
@@ -69,7 +69,7 @@
             </details>
             </div>
             {% endfor %}
-            <div class="collapsor_button"><a href="#contact"><button>Domluvit schůzku</button></a></div>
+            <div class="drop_down_button"><a href="#contact"><button>Domluvit schůzku</button></a></div>
 
         </div>
     </div>
@@ -123,14 +123,14 @@
         <div>
             <h2>Vaše nejčastější dotazy</h2>
         </div>
-        <div class="collapsor">
+        <div class="drop_down">
             {% for faq in config.extra.faqs %}
-            <div class="collapsor_item">
+            <div class="drop_down_item">
                 <details>
                     <summary>
-                <h3 class="collapsor_header">{{ faq.question }}</h3>
+                <h3 class="drop_down_header">{{ faq.question }}</h3>
                 </summary>
-                <div class="collapsor_body">
+                <div class="drop_down_body">
                     <p>{{ faq.answer }}</p>
                 </div>
                 </details>
