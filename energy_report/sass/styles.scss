@@ -27,55 +27,57 @@
     }
 
 
+
     .menu {
         display: flex;
         flex-direction: column;
-        
         gap: 30px;
         margin: 0;
         padding: 0;
-
     }
 
     .menu_toggle {
         display: none;
     }
+    
 
     .menu_toggle_label {
-
-        display: block;
+        display: flex;
         font-size: 2rem;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+  
+    .menu_item a {
         padding: 0.5rem 1rem;
-        border-radius: 5px;
+        color: white;
+        text-decoration: none;
         text-align: center;
+        transition: background 0.3s ease;
+    }
+    
+    .menu_toggle:checked ~ .menu_items {
+        display: flex;
     }
 
     .menu_items {
         display: none;
+        flex-direction: column;
         list-style: none;
-        flex-direction: column;
         margin: 0;
-        padding-right: 1rem;
-        gap: 1rem;
-
-    }
-
-    .menu_item a {
-        display: flex;
-        transition: background 0.3s ease;
-        padding: 0.5rem 1rem;
-        display: block;
-    }
-    
-    .menu_toggle:checked + .menu_toggle_label + .menu_items {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    
-
+        padding: 0;
+        position: absolute;
+        top: 100px;
+        gap: 0.5rem;
+        left: 0;
+        z-index: 1000;
+        background: white;
+        text-align: center;
+        width: 100%;
+    }    
 }
 
 @media (min-width: 768px) {
@@ -95,7 +97,7 @@
         padding-top: 20px;
     }
 
-    .benefits, .monitoring, .features, #contact_block {
+    .benefits, .features, #contact_block {
         display: flex;
         flex-direction: row;
     }
@@ -117,7 +119,7 @@
         text-align: left;
     }
 
-   #contact {
+    #contact {
         display: flex;
         flex-direction: column;
     }
@@ -128,7 +130,13 @@
         object-fit: contain;
     }
 
+    .monitoring {
+        display: flex; 
+        align-items: flex-start;
+}
+
     .monitoring_img {
+        vertical-align: top;
         width: 50%;
         padding: 0 15px;
         object-fit: contain;
@@ -266,12 +274,10 @@ a {
 }
 
 
-
 .introduction>p {
     padding-bottom: 20px;
     font-size: 1.25rem;
 }
-
 
 
 button {
@@ -348,6 +354,24 @@ details {
 
 .drop_down_item {
     box-sizing: border-box;
+    vertical-align: baseline;
+
+}
+
+details[open] .drop_down_body {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 summary {
@@ -366,7 +390,6 @@ summary {
 }
 
 .features {
-
     padding-bottom: 30px;
 }
 
