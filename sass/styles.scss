@@ -110,12 +110,15 @@
 
     .profile {
         padding-top: 50px;
+        width: 50%;
     }
 
     .contact_text {
         padding-top: 0px;
-        flex: 0 0 66.66%;
+        padding-right: 10px;
+        width: 50%;
         text-align: left;
+        text-wrap: wrap;
     }
 
     #contact {
@@ -281,7 +284,7 @@ a {
 
 button {
     background-color: #e07f00;
-    color: white;
+    color: #000000;
     font-weight: 700;
     padding-left: 50px;
     padding-right: 50px;
