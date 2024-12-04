@@ -76,7 +76,12 @@
         background: white;
         text-align: center;
         width: 100%;
-    }    
+    }
+
+    .mailto {
+        display: none;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -169,11 +174,15 @@
         gap: 30px;
         list-style: none;
     }
+
+    .mailto_button {
+        display: none;
+    }
         
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #292824;
     font-size: 1rem;
     font-weight: 400;
@@ -252,7 +261,6 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    width:  180px;
     height: 53px;
 }
 
@@ -264,7 +272,7 @@ a {
 
 
 .menu_item a:hover {
-    color: #e07f00;
+    color: #c70725;
 }
 .menu_item a {
     color:#292824;
@@ -282,18 +290,17 @@ a {
 
 
 button {
-    background-color: #e07f00;
-    color: #000000;
+    background-color: #E30427;
+    color: #FFFFFF;
     font-weight: 700;
-    padding-left: 50px;
-    padding-right: 50px;
-    border: #e07f00;
-    line-height: 54px;
-    font-family: monospace;
+    padding: 0 16px;
+    border: 1px solid #E30427;
+    line-height: 34px;
+    border-radius: 1.5rem;
 }
 
 button:hover {
-    background-color: #9b5a05;
+    background-color: #c70725;
 }
 
 .benefits {
@@ -337,7 +344,7 @@ details {
 }
 
 .drop_down_header:hover {
-    color: #e07f00;
+    color: #c70725;
 }
 
 
@@ -498,3 +505,4 @@ summary {
 html {
     scroll-behavior: smooth;
 }
+
