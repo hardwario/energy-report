@@ -11,6 +11,12 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .icon {
+        max-width: 250px;
+        height: 36px;
+    }
+
     .monitoring_img {
         height: auto; 
         max-width: 100%; 
@@ -25,7 +31,6 @@
         margin: 0 auto; 
         margin-top: 40px;
     }
-
 
 
     .menu {
@@ -77,7 +82,12 @@
         background: white;
         text-align: center;
         width: 100%;
-    }    
+    }
+
+    .mailto {
+        display: none;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -89,6 +99,10 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .icon {
+        height: 53px;
     }
 
     .introduction > h1{
@@ -111,12 +125,15 @@
 
     .profile {
         padding-top: 50px;
+        width: 50%;
     }
 
     .contact_text {
         padding-top: 0px;
-        flex: 0 0 66.66%;
+        padding-right: 10px;
+        width: 50%;
         text-align: left;
+        text-wrap: wrap;
     }
 
     #contact {
@@ -167,11 +184,15 @@
         gap: 30px;
         list-style: none;
     }
+
+    .mailto_button {
+        display: none;
+    }
         
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #292824;
     font-size: 1rem;
     font-weight: 400;
@@ -209,7 +230,6 @@ p {
 }
 
 footer {
-    width: 100%;
     background-color: #292824;
     color: white;
 }
@@ -222,6 +242,7 @@ a {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 56px;
 }
 
 .sticky-scroll{
@@ -241,7 +262,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 56px;
 }
 
 
@@ -250,11 +271,10 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    width:  180px;
-    height: 53px;
 }
 
 .text-hide {
+    display: none;
     color: transparent;
     font: 0;
 
@@ -262,7 +282,7 @@ a {
 
 
 .menu_item a:hover {
-    color: #e07f00;
+    color: #c70725;
 }
 .menu_item a {
     color:#292824;
@@ -280,18 +300,17 @@ a {
 
 
 button {
-    background-color: #e07f00;
-    color: white;
+    background-color: #E30427;
+    color: #FFFFFF;
     font-weight: 700;
-    padding-left: 50px;
-    padding-right: 50px;
-    border: #e07f00;
-    line-height: 54px;
-    font-family: monospace;
+    padding: 0 16px;
+    border: 1px solid #E30427;
+    line-height: 34px;
+    border-radius: 1.5rem;
 }
 
 button:hover {
-    background-color: #9b5a05;
+    background-color: #c70725;
 }
 
 .benefits {
@@ -335,7 +354,7 @@ details {
 }
 
 .drop_down_header:hover {
-    color: #e07f00;
+    color: #c70725;
 }
 
 
@@ -485,11 +504,15 @@ summary {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 15px 30px 15px;
-    width: 100%;
     height: 104px;
+    padding: 30px 56px;
+}
+
+.footer > p {
+    padding-left: 30px;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
