@@ -1,4 +1,3 @@
-
 @media (max-width: 768px) {
     .contact_text {
         text-align: center;
@@ -18,17 +17,17 @@
     }
 
     .monitoring_img {
-        height: auto; 
-        max-width: 100%; 
+        height: auto;
+        max-width: 100%;
         display: block;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
     .report_bg {
-        height: auto; 
-        max-width: 100%; 
+        height: auto;
+        max-width: 100%;
         display: block;
-        margin: 0 auto; 
+        margin: 0 auto;
         margin-top: 40px;
     }
 
@@ -44,7 +43,7 @@
     .menu_toggle {
         display: none;
     }
-    
+
 
     .menu_toggle_label {
         display: flex;
@@ -55,7 +54,7 @@
         width: 30px;
         height: 30px;
     }
-  
+
     .menu_item a {
         padding: 0.5rem 1rem;
         color: white;
@@ -63,8 +62,8 @@
         text-align: center;
         transition: background 0.3s ease;
     }
-    
-    .menu_toggle:checked ~ .menu_items {
+
+    .menu_toggle:checked~.menu_items {
         display: flex;
     }
 
@@ -105,16 +104,20 @@
         height: 53px;
     }
 
-    .introduction > h1{
+    .introduction>h1 {
         line-height: 68px;
         font-size: 4rem;
         padding-top: 20px;
     }
 
-    .benefits, .features, #contact_block {
+    .benefits,
+    .features,
+    #contact_block {
         display: flex;
         flex-direction: row;
+        gap: 30px;
     }
+
     .benefits_item {
         width: 33%;
     }
@@ -124,7 +127,6 @@
     }
 
     .profile {
-        padding-top: 50px;
         width: 50%;
     }
 
@@ -148,9 +150,9 @@
     }
 
     .monitoring {
-        display: flex; 
+        display: flex;
         align-items: flex-start;
-}
+    }
 
     .monitoring_img {
         vertical-align: top;
@@ -159,12 +161,14 @@
         object-fit: contain;
 
     }
+
     .monitoring_drop_down {
         width: 50%;
         padding: 0 15px;
     }
 
-    #procedure >h2, .price >h2 {
+    #procedure>h2,
+    .price>h2 {
         font-size: 3.5rem;
     }
 
@@ -174,7 +178,8 @@
         align-items: center;
     }
 
-    .menu_toggle, .menu_toggle_label {
+    .menu_toggle,
+    .menu_toggle_label {
         display: none;
     }
 
@@ -188,7 +193,7 @@
     .mailto_button {
         display: none;
     }
-        
+
 }
 
 body {
@@ -245,7 +250,7 @@ a {
     padding: 0 56px;
 }
 
-.sticky-scroll{
+.sticky-scroll {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -284,8 +289,9 @@ a {
 .menu_item a:hover {
     color: #c70725;
 }
+
 .menu_item a {
-    color:#292824;
+    color: #292824;
     text-decoration: none;
     font-size: 16px;
     color: #292824;
@@ -321,6 +327,7 @@ button:hover {
     display: flex;
 
 }
+
 .benefits_img {
     padding: 0 15px;
     margin-top: 20px;
@@ -386,6 +393,7 @@ details[open] .drop_down_body {
         transform: translateY(-10%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -416,6 +424,7 @@ summary {
 
 
 }
+
 .features_img {
     padding: 0 15px;
     margin-top: 20px;
@@ -453,24 +462,24 @@ summary {
 .partner::before,
 .partner::after {
     content: "";
-    flex: 0 0 2cm; 
-    height: 1.5px; 
-    background-color: #ccc; 
+    flex: 0 0 2cm;
+    height: 1.5px;
+    background-color: #ccc;
 }
 
 #contact_block {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: #292824;
     color: white;
 }
 
 .profile {
     text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-
 }
+
 .profile_img {
     padding-left: auto;
     padding-right: auto;
@@ -508,11 +517,10 @@ summary {
     padding: 30px 56px;
 }
 
-.footer > p {
+.footer>p {
     padding-left: 30px;
 }
 
 html {
     scroll-behavior: smooth;
 }
-
