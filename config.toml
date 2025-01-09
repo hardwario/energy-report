@@ -13,28 +13,31 @@ build_search_index = true
 highlight_code = true
 
 
-[extra]
-title = "Energetický report"
-price = "Za 95.000 Kč bez DPH získáte úvodní analýzu energetického auditu, pět mobilních IoT zařízení (každé se 3 neinvazivními proudovými senzory) včetně instalace u vás a roční konektivitu a provoz aplikace Microsoft Power BI."
-
-
 [[extra.benefits]]
 image = "images/effectivity.svg"
 alt = "Efektivnost"
 title = "Mobilní řešení"
-description = "Zcela mobilní řešení, které je kdykoliv snadno přenositelné na další stroje ve vašem podniku."
+description = "Mobilní řešení, které je kdykoliv snadno přenositelné na další stroje ve vašem podniku."
 
 [[extra.benefits]]
 image = "images/consumption.svg"
 alt = "Spotřeba"
 title = "Bezpečná komunikace"
-description = "Zařízení komunikují bezdrátově a nezávisle na vaší interní síti."
+description = "Zařízení komunikují bezdrátově, bezpečně a nezávisle na vaší interní síti."
+
+
+[[extra.benefits]]
+image = "images/time-effectivity.svg"
+alt = "Efektivita"
+title = "Rychle a bezstarostně"
+description = "Instalaci začneme do 30 dnů a potrvá jen desítky minut. Provoz omezíme minimálně, nebo vůbec."
 
 [[extra.benefits]]
 image = "images/document.svg"
-alt = "Dokument"
-title = "Data v Microsoft Power BI"
-description = "Přehledné reporty o spotřebě strojů najdete v aplikaci Microsoft Power BI."
+alt = "Spotřeba"
+title = "Okamžitá data z provozu"
+description = "Ihned po instalaci uvidíte data z výroby ve vašem telefonu i počítači."
+
 
 
 [[extra.steps]]
@@ -54,42 +57,20 @@ title = "Sledování a vyhodnocení"
 description = "Data o spotřebě budete mít okamžitě ve svém počítači i telefonu. Společně se na data podíváme, vyhodnotíme přínosy a pobavíme se o dalších možnostech nasazení a rozšíření IoT monitoringu."
 
 
-[[extra.features]]
-image = "images/effectivity.svg"
-alt = "Efektivita"
-title = "Rychle a bezstarostně"
-description = "Instalaci začneme do 30 dnů a potrvá jen desítky minut. Provoz omezíme minimálně, nebo vůbec."
-
-[[extra.features]]
-image = "images/consumption.svg"
-alt = "Spotřeba"
-title = "Okamžitá data z provozu"
-description = "Ihned po instalaci uvidíte data z výroby ve vašem telefonu i počítači."
-
-[[extra.features]]
-image = "images/document.svg"
-alt = "Dokument"
-title = "Záruka spokojenosti"
-description = "Pokud nebudete spokojeni, můžete nám zařízení do 100 dnů vrátit."
-
 
 [[extra.faqs]]
-question = "Jak probíhá program energeticky.report?"
-answer = "Po odeslání formuláře vás kontaktujeme a domluvíme se na termínu společné online schůzky. Cílem je zodpovědět vaše dotazy a vybrat způsob měření spotřeby energií."
+question = "Jak funguje program Energeticky.report?"
+answer = "Po odeslání formuláře vás oslovíme, abychom si domluvili termín online schůzky. Během ní odpovíme na vaše dotazy a společně vybereme nejvhodnější způsob měření spotřeby energií."
 
 [[extra.faqs]]
-question = "Je možné pilot rozšířit o další zařízení?"
-answer = "Ano, cena každého dalšího zařízení je 9 500 Kč bez DPH."
+question = "Lze program rozšířit o další zařízení?"
+answer = "Ano, program je kdykoli možné rozšířit o další zařízení podle vašich potřeb."
 
 [[extra.faqs]]
-question = "Jak data o výrobě přenášíte? Je to bezpečné?"
-answer = "Data přenášíme bezdrátovými sítěmi NB-IoT a LTE-M. Mají skvělé pokrytí včetně vnitřních prostor továren. Síť je zcela nezávislá od vaší interní sítě, přenos je zabezpečený."
+question = "Jak probíhá přenos dat o výrobě? Je to bezpečné?"
+answer = "Data přenášíme bezdrátovými sítěmi NB-IoT a LTE-M, které mají výborné pokrytí i uvnitř továren. Tyto sítě jsou zcela nezávislé na vaší interní síti a přenos dat je plně zabezpečený."
 
 [[extra.faqs]]
 question = "Kde uvidíme data?"
-answer = "V programu energeticky.report pracujeme s výstupy v Power BI od Microsoftu. Jak to může vypadat se podívejte na odkaze. Pokud však potřebujete data vidět jinde, najdeme cestu, jak to udělat. S pomocí našich partnerů pak nabízíme také vlastní webové aplikace."
-
-[[extra.faqs]]
-question = "Kolik budeme platit za služby po skončení předplaceného roku?"
-answer = "Měsíční poplatek za jedno IoT zařízení po uplynutí přeplaceného 1. roku bude 190 Kč bez DPH."
+answer = "Data můžete sledovat v přehledných dashboardech na počítači i telefonu. Nabízíme vlastní řešení, které sami hostujeme, a zároveň ho můžeme integrovat přímo do vašeho systému podle vašich potřeb."
 

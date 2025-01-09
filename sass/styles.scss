@@ -105,13 +105,12 @@
     }
 
     .introduction>h1 {
-        line-height: 68px;
+        line-height: 1.3;
         font-size: 4rem;
         padding-top: 20px;
     }
 
     .benefits,
-    .features,
     #contact_block {
         display: flex;
         flex-direction: row;
@@ -119,11 +118,8 @@
     }
 
     .benefits_item {
-        width: 33%;
-    }
-
-    .features_item {
-        width: 33%;
+        width: 25%;
+        flex-direction: column;
     }
 
     .profile {
@@ -152,6 +148,7 @@
     .monitoring {
         display: flex;
         align-items: flex-start;
+        padding-bottom: 25px;
     }
 
     .monitoring_img {
@@ -167,8 +164,7 @@
         padding: 0 15px;
     }
 
-    #procedure>h2,
-    .price>h2 {
+    #procedure>h2 {
         font-size: 3.5rem;
     }
 
@@ -278,13 +274,6 @@ a {
     background-size: 100%;
 }
 
-.text-hide {
-    display: none;
-    color: transparent;
-    font: 0;
-
-}
-
 
 .menu_item a:hover {
     color: #c70725;
@@ -298,12 +287,10 @@ a {
 
 }
 
-
 .introduction>p {
     padding-bottom: 20px;
     font-size: 1.25rem;
 }
-
 
 button {
     background-color: #E30427;
@@ -313,6 +300,7 @@ button {
     border: 1px solid #E30427;
     line-height: 34px;
     border-radius: 1.5rem;
+    font-size: 1rem;
 }
 
 button:hover {
@@ -325,7 +313,6 @@ button:hover {
 
 .benefits_item {
     display: flex;
-
 }
 
 .benefits_img {
@@ -341,11 +328,9 @@ button:hover {
     padding: 0 15px;
 }
 
-
 details {
     box-sizing: border-box;
 }
-
 
 .drop_down_header {
     border-bottom: 1px solid #dfdfdf;
@@ -419,52 +404,13 @@ summary {
     padding-bottom: 30px;
 }
 
-.features_item {
-    display: flex;
-
-
-}
-
-.features_img {
-    padding: 0 15px;
-    margin-top: 20px;
-    max-width: 70px;
-    max-height: 80px;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.features_description {
-    padding: 0 15px;
+.monitoring_img {
+    border-radius: 25px;
+    padding: 10px;
 }
 
 #contact {
     gap: 60px;
-}
-
-.partner {
-    text-align: center;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #666;
-    font-size: .9375rem;
-    font-family: monospace;
-    font-weight: 700;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 00px;
-
-}
-
-.partner::before,
-.partner::after {
-    content: "";
-    flex: 0 0 2cm;
-    height: 1.5px;
-    background-color: #ccc;
 }
 
 #contact_block {
@@ -474,6 +420,7 @@ summary {
     padding-right: 30px;
     background-color: #292824;
     color: white;
+    border-radius: 25px;
 }
 
 .profile {

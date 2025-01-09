@@ -5,7 +5,7 @@
     <header class="body-header">
         <div>
             <a href="#opening"><img class="icon" src="images/hw-logo-energeticky-report.svg" alt="Logo"></a>
-            <a href="#opening" class="text-hide">{{ section.title }}</a>
+
         </div>
 
         <div class="menu">
@@ -14,7 +14,6 @@
             <ul class="menu_items">
                 <li class="menu_item"><a href="#opening">Úvod</a></li>
                 <li class="menu_item"><a href="#procedure">Jak to funguje</a></li>
-                <li class="menu_item"><a href="#price">Cena</a></li>
                 <li class="menu_item"><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
@@ -24,16 +23,16 @@
 <div class="article">
     <div class="section" id="opening">
         <div class="introduction">
-            <h1>Bezdrátový<br> IoT monitoring<br> spotřeby strojů</h1>
-            <p>Neinvazivní, bezpečný a dostupný</p>
-            <div><a href="#contact"><button>Domluvit schůzku</button></a></div>
+            <h1>Ušetřete s naším IoT řešením až 30 %</h1>
+            <p>Neinvazivní, bezpečný a dostupný bezdrátový<br> IoT monitoring spotřeby strojů</p>
+            <div><a href="#contact"><button>Chci schůzku ZDARMA</button></a></div>
         </div>
         <img class="report_bg" src="images/energy-report-bg.svg" width="640" height="360" alt="Bezdrátový monitoring">
     </div>
 
     <section class="section">
         <div>
-            <h2>Výhody Iot monitoringu</h2>
+            <h2>Výhody IoT monitoringu</h2>
         </div>
         <div class="benefits">
             {% for benefit in config.extra.benefits %}
@@ -68,39 +67,12 @@
                     </details>
                 </div>
                 {% endfor %}
-                <div class="drop_down_button"><a href="#contact"><button>Domluvit schůzku</button></a></div>
+                <div class="drop_down_button"><a href="#contact"><button>Chci schůzku ZDARMA</button></a></div>
             </div>
         </div>
-    </section>
-
-    <section class="section" id="price">
-        <div class="price">
-            <h2>Cena</h2>
-            <p>{{ config.extra.price }}</p>
-        </div>
-    </section>
-
-    <section class="features section">
-        {% for feature in config.extra.features %}
-        <div class="features_item">
-            <img class="features_img" src="{{ feature.image }}" alt="{{ feature.alt }}">
-            <div class="features_description">
-                <h3>{{ feature.title }}</h3>
-                <p>{{ feature.description }}</p>
-            </div>
-        </div>
-        {% endfor %}
     </section>
 
     <section class="section" id="contact">
-        <div>
-            <div class="partner">
-                <span>Partner programu energeticky.report</span>
-            </div>
-            <div class="microsoft">
-                <img class="microsoft_logo" src="images/microsoft.svg" alt="Microsoft">
-            </div>
-        </div>
         <div id="contact_block">
             <div class="profile">
                 <img class="profile_img" src="images/rene.avif" alt="René Gubančok">
@@ -113,7 +85,7 @@
 
             </div>
             <div class="contact_text">
-                <h3>Nechte mi na vás kontakt, ozvu se</h3>
+                <h3>Domluvte si schůzku zdarma do naplnění kapacit</h3>
                 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                 <script>
                     hbspt.forms.create({
