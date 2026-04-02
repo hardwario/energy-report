@@ -418,13 +418,11 @@ details > summary::-webkit-details-marker {
 }
 
 #contact_block {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #292824;
-    color: white;
+    padding: 30px;
+    border: 1px solid #292824;
     border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .profile {
@@ -448,6 +446,11 @@ details > summary::-webkit-details-marker {
 
     font-size: 2rem;
     font-weight: 700;
+}
+
+#questions {
+    padding-top: 0px;
+    padding-bottom: 50px;
 }
 
 .microsoft {
